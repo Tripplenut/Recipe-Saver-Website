@@ -21,8 +21,7 @@ public class Recipe {
     public Recipe(){
     }
 
-    public Recipe(Long id, String recipeName, String recipeDescription, String recipeIngredients) {
-        this.id = id;
+    public Recipe(String recipeName, String recipeDescription, String recipeIngredients){
         this.recipeName = recipeName;
         this.recipeDescription = recipeDescription;
         this.recipeIngredients = recipeIngredients;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
     <title> Recipe Saver </title>
@@ -15,10 +16,10 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">Recipe Name</th>
-                    <th scope="col">Recipe Description</th>
-                    <th scope="col">Recipe Ingredients</th>
-                    <th scope="col">Actions</th>
+                    <th>Recipe Name</th>
+                    <th>Recipe Description</th>
+                    <th>Recipe Ingredients</th>
+                    <th>Actions</th>
                 </tr>
                 </thead>
 
@@ -26,7 +27,7 @@
                     <tr th:each = "recipe: ${recipe}">
                         <td th:text = "${recipe.recipeName}"></td>
                         <td th:text = "${recipe.recipeDescription}"></td>
-                        <td th:text = "${recipe.recipeIngrdients}"></td>
+                        <td th:text = "${recipe.recipeIngredients}"></td>
                     </tr>
                 </tbody>
             </table>

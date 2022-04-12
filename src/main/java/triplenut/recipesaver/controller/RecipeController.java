@@ -14,10 +14,10 @@ public class RecipeController {
     }
 
     //Handles Recipe List request and returns to view
-    @GetMapping("/recipe")
+    @GetMapping("/index")
     public String listRecipes(Model model){
-        model.addAttribute("recipes",recipeService.getAllRecipes());
-        return "recipes";
+        model.addAttribute("recipe",recipeService.getAllRecipes());
+        return "index";
     }
 
 
